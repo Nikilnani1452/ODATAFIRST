@@ -18,7 +18,7 @@
 		"description": "{{appDescription}}",
 		"dataSources": {
 			"default": {
-				"uri": "http://localhost:4004/odata/v4/nani/Product/",
+				"uri": "/odata/v4/nani/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "4.0"
@@ -53,6 +53,7 @@
 			"compact": true,
 			"cozy": true
 		},
+		"handleValidation": true,
 		"models": {
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
@@ -70,7 +71,8 @@
 				"settings": {
 					"autoExpandSelect": true,
 					"earlyRequests": true,
-					"operationMode": "Server"
+					"operationMode": "Server",
+					"groupId": "$auto"
 				}
 			}
 		}
